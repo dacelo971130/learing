@@ -16,7 +16,7 @@ JSON
 {
     "QAZ": {
         "FUNCTION": {
-            "FUNNAME": "fiscQRcode",
+            "FUNNAME": "qazPayment",
             "VERSION": "v1"
         },
         "DOC": {
@@ -41,8 +41,8 @@ JSON
 
 ## 情境要求
 
-1. 加密需求
-2. 部分 Map 為變動的
+1. 加密 - JSON 整體資訊做為重要參數
+2. 變動式 Body - 因為功能而提供不同的 Body
 
 ## 添加依賴
 
