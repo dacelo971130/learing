@@ -1,4 +1,13 @@
-# Jackson 處理多階層 JSON 
-這個專案會模擬多階層 JSON (text/plain) 的接收，並藉由 Jackson 套件，將整個 JSON 解析後賦值進對應 Class 中
+# Spring-boot API 使用 Jackson 接收多階層 JSON 
 
-以下是模擬的 JSON 階層範例
+## 概述
+
+專案中常常會用撰寫 API 接受 JSON 的情況，有時候階層數一多，一個個賦值真的是會賦到抓狂，藉由 spring-boot 內建的 Jackson 我們可以輕鬆的賦值到所有對應的 Field 上
+
+## 情境
+
+## 添加依賴
+
+
+
+
