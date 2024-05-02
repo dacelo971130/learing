@@ -10,12 +10,50 @@
 
 ## 範例
 
+JSON
+
+```
+{
+    "QAZ": {
+        "FUNCTION": {
+            "FUNNAME": "fiscQRcode",
+            "VERSION": "v1"
+        },
+        "DOC": {
+            "HEADER": {
+                "UUID": "188b6ac0-fa34-4fa0-a59d-49e3f7e9c3c0",
+                "TX_DATETIME": "20240422063943",
+                "MERCHANT": "85930815",
+                "UNIQUE_ID": "48515"
+            },
+            "BODY": {
+                "MEMBER_NO": "41905599930723",
+            }
+        },
+        "ENCODE": {
+            "DIG": "ABCEFG",
+            "SIGNATURE": "QAZWSX",
+            "MAC": "QAZWSXEDC"
+        }
+    }
+}
+```
+
 ## 情境要求
 
 1. 加密需求
 2. 部分 Map 為變動的
 
 ## 添加依賴
+
+使用 Lombok 省略樣本 Code 
+
+```
+compileOnly 'org.projectlombok:lombok'
+annotationProcessor 'org.projectlombok:lombok'
+```
+
+## 正文
 
 ## 參考
 
