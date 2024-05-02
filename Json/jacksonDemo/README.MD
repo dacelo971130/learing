@@ -53,7 +53,86 @@ compileOnly 'org.projectlombok:lombok'
 annotationProcessor 'org.projectlombok:lombok'
 ```
 
-## 正文
+## 使用方式
+
+接下來我們要藉由 Jacnkson 的 objectMapper.readValue() 來轉化我們收到的 Json 成為所需物件
+
+```
+ QazApiRequest rq = objectMapper.readValue(dto.getJson(), QazApiRequest.class);
+```
+
+## 準備類別
+
+@JsonProperty("") : 是 Jackson 中的一個註釋類別，會辨識 JSON 中的 key，支援大小寫區別
+
+### QazApiRequest
+
+```
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
+public class QazApiRequest {
+
+    @JsonProperty("QAZ")
+    private Qaz qaz;
+}
+```
+
+### QAZ
+
+```
+@Getter 
+// 略..
+public class Qaz {
+
+    @JsonProperty("FUNCTION")
+    private Function function;
+
+    @JsonProperty("DOC")
+    private Doc doc;
+
+    @JsonProperty("ENCODE")
+    private Encode encode;
+}
+```
+
+### FUNCTION
+
+```
+@Getter 
+// 略..
+public class Function {
+
+    @JsonProperty("FUNNAME")
+    private String funName;
+
+    @JsonProperty("VERSION")
+    private String version;
+}
+```
+
+### DOC
+
+```
+@Getter 
+// 略..
+public class Doc {
+
+    @JsonProperty("HEADER")
+    private Header header;
+
+    @JsonProperty("BODY")
+    private Body body;
+}
+```
+
+### HEADER
+
+```
+
+```
 
 ## 參考
 
