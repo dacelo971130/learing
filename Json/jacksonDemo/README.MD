@@ -52,14 +52,6 @@ compileOnly 'org.projectlombok:lombok'
 annotationProcessor 'org.projectlombok:lombok'
 ```
 
-## 使用方式
-
-接下來我們要藉由 Jacnkson 的 objectMapper.readValue() 來轉化我們收到的 Json 成為所需物件
-
-```
- QazApiRequest rq = objectMapper.readValue(dto.getJson(), QazApiRequest.class);
-```
-
 ## 準備類別
 
 @JsonProperty("") : 是 Jackson 中的一個註釋類別，會辨識 JSON 中的 key，支援大小寫區別
@@ -178,6 +170,19 @@ public class Encode {
 }
 ```
 
+## 使用方式
 
+接下來我們要藉由 Jacnkson 的 objectMapper.readValue() 來轉化我們收到的 Json 成為所需物件
 
+```
+ QazApiRequest rq = objectMapper.readValue(dto.getJson(), QazApiRequest.class);
+
+// objectMapper 建議以注入的方式使用， new 的開銷比較大
+```
+
+之後變大功告成~
+
+## 額外補充
+
+有許多 Developer Tools 也支援將 JSON 轉換為 Class 自行建立，完全不需要手動一個個設置
 
