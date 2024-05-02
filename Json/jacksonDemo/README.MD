@@ -41,7 +41,7 @@ JSON
 
 ## 添加依賴
 
-使用 Lombok 省略樣本 Code 
+使用 Lombok 省略 Sample Code 
 
 ```
 compileOnly 'org.projectlombok:lombok'
