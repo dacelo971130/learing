@@ -168,12 +168,11 @@ public class Encode {
 
 ## 使用方式
 
-接下來我們要藉由 Jacnkson 的 objectMapper.readValue() 來轉化我們收到的 Json 成為所需物件
+接下來我們要藉由 Jacnkson 的 objectMapper.readValue() 來轉化我們收到的 JSON 成為所需物件
 
 ```
+// objectMapper 建議以 @Autowired 的方式使用， new 的開銷比較大
  QazApiRequest rq = objectMapper.readValue(dto.getJson(), QazApiRequest.class);
-
-// objectMapper 建議以注入的方式使用， new 的開銷比較大
 ```
 
 之後變大功告成~
