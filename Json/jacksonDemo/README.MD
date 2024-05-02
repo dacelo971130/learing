@@ -2,7 +2,7 @@
 
 ## 概述
 
-在專案中，常常會有撰寫 API 接受 JSON 的情況，有時候階層數一多，一個個賦值非常的耗時又容易出錯
+在專案中，常常會有撰寫 API 接受 JSON 的情況，有時候階層數一多，Key 又是大寫，一個個賦值非常的耗時又容易出錯
 
 因此，藉由 spring-boot 內建的 Jackson 我們可以輕鬆的將 Json 賦值到所有對應的 Field 上，
 
@@ -41,8 +41,7 @@ JSON
 
 ## 情境要求
 
-1. 加密 - JSON 整體資訊做為重要參數
-2. 變動式 Body - 因為功能而提供不同的 Body
+加密 - JSON 整體資訊做為重要參數
 
 ## 添加依賴
 
@@ -80,7 +79,7 @@ public class QazApiRequest {
 }
 ```
 
-### QAZ
+### Qaz
 
 ```
 @Getter 
@@ -98,7 +97,7 @@ public class Qaz {
 }
 ```
 
-### FUNCTION
+### Function
 
 ```
 @Getter 
@@ -113,7 +112,7 @@ public class Function {
 }
 ```
 
-### DOC
+### Doc
 
 ```
 @Getter 
@@ -128,13 +127,56 @@ public class Doc {
 }
 ```
 
-### HEADER
+### Header
 
 ```
+@Getter
+// 略..
+public class Header {
 
+    @JsonProperty("UUID")
+    private String uuid;
+
+    @JsonProperty("TX_DATETIME")
+    private String txDatetime;
+
+    @JsonProperty("MERCHANT")
+    private String merchant;
+
+    @JsonProperty("UNIQUE_ID")
+    private String uniqueId;
+}
 ```
 
-## 參考
+### Body
+
+```
+@Getter
+// 略..
+public class Body {
+
+    @JsonProperty("MEMBER_NO")
+    private String memberNo;
+}
+```
+
+### Encode
+
+```
+@Getter
+// 略..
+public class Encode {
+
+    @JsonProperty("DIG")
+    private String dig;
+
+    @JsonProperty("MAC")
+    private String mac;
+
+    @JsonProperty("SIGNATURE")
+    private String signature;
+}
+```
 
 
 
