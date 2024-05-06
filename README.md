@@ -36,7 +36,7 @@
 
 ## Test
 
-[JMeter - 基本操作/流量測試](./)
+[JMeter - 流量測試](./)
 
 ## Other
 
