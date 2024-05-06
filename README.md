@@ -1,5 +1,7 @@
 # 目錄
 
+紀錄個人技術學習之筆記，主要涵蓋 Java + Spring Framework 體系相關
+
 ## Front-end
 
 ### HTML
