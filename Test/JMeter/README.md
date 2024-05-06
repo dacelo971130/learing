@@ -43,6 +43,6 @@
 
 [Jmeter 基本介紹 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10186852)
 
-[Day 20 Jmeter 壓力測試工具 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天] (https://ithelp.ithome.com.tw/articles/10203900)
+[Day 20 Jmeter 壓力測試工具 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10203900)
 
      
