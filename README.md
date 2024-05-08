@@ -32,5 +32,5 @@
 
 [JMeter - 流量測試](./test/JMeter.md)
 
-## 個人
+## other
 [自製簡易且樸素的 Google slide template](./GoogleSlide.md)
