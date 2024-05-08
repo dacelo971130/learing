@@ -20,15 +20,6 @@
 
 ### Java
 
-[List]
-
-[Map]
-
-[Optional]
-
-[Stream]
-
-[lambda]
 
 ### SQL
 
