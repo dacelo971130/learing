@@ -42,26 +42,28 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class JasyptConfig {
+
+    // 自行定義的 Key，外部加/解密需要與此相同
     public static final String JASYPT_ENCRYPTOR_PWD = "bD2ogEjlJ9";
 
     @Bean("jasyptInfo")
     public StringEncryptor encrypt() {
-        PooledPBEStringEncryptor encryptor = new PooledPBEStringEncryptor();
         SimpleStringPBEConfig config = new SimpleStringPBEConfig();
         config.setPassword(JASYPT_ENCRYPTOR_PWD);
         config.setAlgorithm("PBEWithMD5AndDES");
         config.setPoolSize("1");
+
+        PooledPBEStringEncryptor encryptor = new PooledPBEStringEncryptor();
         encryptor.setConfig(config);
         return encryptor;
     }
 }
 ```
 
-JASYPT_ENCRYPTOR_PWD : 自行定義的 Key，外部加/解密需要與此相同
-
 ## 設置 application.properties
 
 ```
+// 與設置的 Config 名稱相對應
 jasypt.encryptor.bean=jasyptInfo
 ```
 
@@ -81,7 +83,7 @@ public class JasyptUtil {
     /**
      * @param content   enc(content)
      * @param key       
-     * @param isEncrypt true(already encrypt) -> decrypt / false(origin content) -> encrypt
+     * @param isEncrypt true(加密過的 content) -> decrypt / false(未加密的 content) -> encrypt
      */
     public static String encryptor(String content, String key, boolean isEncrypt) {
         try {
@@ -105,11 +107,12 @@ public class JasyptUtil {
     }
 
     private static PooledPBEStringEncryptor createStringEncryptor(String key) {
-        PooledPBEStringEncryptor encryptor = new PooledPBEStringEncryptor();
         SimpleStringPBEConfig config = new SimpleStringPBEConfig();
         config.setPassword(key);
         config.setAlgorithm("PBEWithMD5AndDES");
         config.setPoolSize("1");
+
+        PooledPBEStringEncryptor encryptor = new PooledPBEStringEncryptor();
         encryptor.setConfig(config);
         return encryptor;
     }
