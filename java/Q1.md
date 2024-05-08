@@ -1,4 +1,4 @@
-# Java 面試題
+# Java 面試題收集(一)
 
 1. 請說明 Final、Finally、Finalize 三者不同?
 
@@ -47,4 +47,4 @@
 23. JSP 隱含物件有哪幾個
 
 ## 參考
-[Java面試題整理](./https://medium.com/%E7%A7%91%E6%8A%80%E7%A0%94%E7%A9%B6%E9%99%A2/java%E9%9D%A2%E8%A9%A6%E9%A1%8C%E6%95%B4%E7%90%86-ed44d4b10437)
+[Java面試題整理](https://medium.com/%E7%A7%91%E6%8A%80%E7%A0%94%E7%A9%B6%E9%99%A2/java%E9%9D%A2%E8%A9%A6%E9%A1%8C%E6%95%B4%E7%90%86-ed44d4b10437)
