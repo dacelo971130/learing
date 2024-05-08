@@ -43,15 +43,15 @@
 
 [Spring Batch]
 
-[Jasypt - 將 application.properties 重要資訊加密](./Encode/spring-boot-Jasypt/README.md)
+[Jasypt - 將 application.properties 重要資訊加密](./spring-boot/spring-boot-jasypt.md)
 
-[Jackson - 將多階層的 JSON 物件轉成 Java Class (針對大寫 Key)](./Json/jacksonDemo/README.md)
+[Jackson - 將多階層的 JSON 物件轉成 Java Class (針對大寫 Key)](./spring-boot/spring-boot-jackson.md)
 
 [Apache Common]
 
 ## Test
 
-[JMeter - 流量測試](./Test/)
+[JMeter - 流量測試](./test/JMeter.md)
 
 ## 微服務
 
