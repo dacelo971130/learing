@@ -18,6 +18,10 @@
 
 當然現在 IDEA 右鍵 Gen 也能產出來，但屬性夠多的時候，光找到要改的屬性就眼花了，還是需要它
 
+## @Getter(lazy=true)
+
+ummm...
+
 ## ToString
 
 常見常用，打印類別所有屬性
@@ -73,7 +77,3 @@ ummm...
 ## 參考
 
 [官方 Doc](https://projectlombok.org/features/)
-
-## @Getter(lazy=true)
-
-ummm...
