@@ -3,4 +3,4 @@
 
 ## @Data
 
-[Lombok @Data 遇到的坑](./java/Lombok@Data坑.md)
+[Lombok @Data 遇到的坑](./Lombok@Data坑.md)
