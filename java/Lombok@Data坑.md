@@ -118,7 +118,7 @@ public boolean equals(final Object o) {
 1. 自己 `override` `equals()` & `hashCode()`
 2. 子類加上 `@EqualsAndHashCode(callSuper = true)`
 3. 放棄使用 `@Data`
-4. 直上 Kotlin 簡單粗暴
+4. 直上 Kotlin 簡單、粗暴
 
 個人選擇是 3. 
 
