@@ -1,6 +1,6 @@
 # Lombok 常用註解
 
-[Doc](https://projectlombok.org/features/)
+[官方 Doc](https://projectlombok.org/features/)
 
 ## val / var 
 
