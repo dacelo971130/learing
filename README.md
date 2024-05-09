@@ -35,8 +35,11 @@
 [JMeter - 流量測試](./test/JMeter.md)
 
 ## Other
+
 [自製簡易且樸素的 Google slide template](./GoogleSlide.md)
 
 ## IntelliJ
+
 [常用快捷鍵](./)
+
 [常用插件](./)
