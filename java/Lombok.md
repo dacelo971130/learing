@@ -3,4 +3,4 @@
 
 ## @Data
 
-[Lombok @Data 遇到的坑](./Lombok@Data坑.md)
+[什麼?用 Lombok @Data 可能要繳稅](./Lombok@Data坑.md)
