@@ -115,7 +115,7 @@ public boolean equals(final Object o) {
 
 ## 解決辦法
 
-1. 自己 override equals() & hashCode()
+1. 自己 `override` `equals()` & `hashCode()`
 2. 子類加上 `@EqualsAndHashCode(callSuper = true)`
 3. 放棄使用 `@Data`
 
