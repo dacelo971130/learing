@@ -63,7 +63,7 @@ public static void main(String[] args) {
 
 接下來，我們來看一下反編譯後的 Animal.class 的 `equals()` & `hashCode()`
 
-先從 `hashCode()` 開始看，這裡 `hashCode()` 只對 `name` 和 `age` 做處理
+先從 `hashCode()` 開始看，這裡 `hashCode()` 只對 `name` 和 `age` 做處理，並沒有對子類的 `type` 做處理
 
 ```
  public int hashCode() {
@@ -107,9 +107,9 @@ public boolean equals(final Object o) {
     }
 ```
 
-而好玩的事 如果用 `@Data` 取代 Bird 的 `@Getter`、`@Setter`，也會有一樣的問題，而且還反過來XD
+而好玩的是，如果用 `@Data` 取代 Bird 的 `@Getter`、`@Setter`，也會有一樣的問題，而且還反過來XD
 
-在新版本中，IDE 還可能提醒你，會有一段錯誤訊息要求你更改加上 `@EqualsAndHashCode(callSuper = true)`
+並且 `@Data` 在新版本中，IDE 還可能提醒你，會有一段錯誤訊息要求你更改加上 `@EqualsAndHashCode(callSuper = true)`
 
 但如果你是用 `@Getter`、`@Setter` 那就刺激了，可以過編譯還不會提醒你，真的讚
 
