@@ -1,8 +1,8 @@
 # Lombok 常用註解
 
-## Getter
+## @Getter
 
-## Setter
+## @Setter
 
 ## @Data
 
