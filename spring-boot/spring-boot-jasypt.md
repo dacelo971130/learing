@@ -17,7 +17,7 @@ spring.datasource.username=ENC(A9v8dup/nbF5NdX22HPNS4Q1bR7CrVcI)
 spring.datasource.password=ENC(hf9v8dup/nbF5NdX22HPNS4Q1bR7CrVcI)
 ```
 
-ENC() 是 Jasypt 用來辨識相關加密資訊的位置
+`ENC()` 是 Jasypt 用來辨識相關加密資訊的位置
 
 如覺得很醜也可不使用，但就需要額外做處理，接下來，我們來看一下，他的使用方式。
 
