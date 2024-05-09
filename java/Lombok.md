@@ -1,7 +1,5 @@
 # Lombok 常用註解
 
-[官方 Doc](https://projectlombok.org/features/)
-
 ## val / var 
 
 不常見不常用，我通常會直接用 Groovy & Kotlin 內建的關鍵字
@@ -71,6 +69,10 @@ ummm...
 ## @With
 
 ummm...
+
+## 參考
+
+[官方 Doc](https://projectlombok.org/features/)
 
 ## @Getter(lazy=true)
 
