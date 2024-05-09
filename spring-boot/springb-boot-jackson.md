@@ -50,7 +50,7 @@ annotationProcessor 'org.projectlombok:lombok'
 
 ## 準備類別
 
-@JsonProperty("") : 是 Jackson 中的一個註釋類別，會辨識 JSON 中的 key，支援大小寫區別
+`@JsonProperty()` : 是 Jackson 中的一個註釋類別，會辨識 JSON 中的 key，支援大小寫區別
 
 ### QazApiRequest
 
