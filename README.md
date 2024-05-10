@@ -36,7 +36,7 @@
 
 ## Other
 
-[自製簡易且樸素的 Google slide template](./GoogleSlide.md)
+[自製簡易且樸素的 Google slide template](./other/GoogleSlide.md)
 
 ## IntelliJ
 
