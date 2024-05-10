@@ -118,11 +118,7 @@ public boolean equals(final Object o) {
 1. 自己 `override` `equals()` & `hashCode()`
 2. 子類加上 `@EqualsAndHashCode(callSuper = true)`
 3. 放棄使用 `@Data`
-4. 直上 Kotlin 簡單、粗暴
-
-個人選擇是 3. 
-
-回報給團隊和其他在使用的人，明令禁止使用 `@Data`，直接略過這個坑，節省別人的時間和減少學習成本
+4. 直上 Kotlin 簡單、粗暴，kotlin 禁止使用 `@Data` 後繼承
 
 ## 推薦套件
 
