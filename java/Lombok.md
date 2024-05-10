@@ -2,33 +2,40 @@
 
 ## val / var 
 
-不常見不常用，我通常會直接用 Groovy & Kotlin 內建的關鍵字
+類似 Groovy 的 `def`，Java 17 也有支援，通常建議使用原生或 Groovy & Kotlin 較好
 
 ## @NonNull
 
-常見常用，檢查 `Null` 用的
+檢查 `Null` 用的，已有許多取代方式
 
 ## @Cleanup
 
-常見不常用，關閉資源用的，我更喜歡 `try-catch` 包在裡面，自動關閉的寫法
+關閉資源用的，我更喜歡 `try-catch` 包在裡面，自動關閉的寫法
 
 ## @Getter / Setter
 
-自動建立所有屬性的 `getXXX()`、`setXXX()`，這就是你用它最大的理由，
+自動建立所有屬性的 `getXXX()`、`setXXX()`，用於 Class 上，IDEA 右鍵本身也產快速產製
 
-當然現在 IDEA 右鍵 Gen 也能產出來，但屬性夠多的時候，光找到要改的屬性就眼花了，還是需要它
+```
+
+```
 
 ## @Getter(lazy=true)
 
 ummm...
 
-## ToString
+## @ToString
 
-常見常用，打印類別所有屬性
+打印物件用的，用於 Class 上
+
+```
+@ToString
+public class A{}
+```
 
 ## @EqualsAndHashCode
 
-ummm...
+坑爹小鞭炮，用於 Class 上，產製 `equals()` & `hashcode()`
 
 ## @NoArgsConstructor, @RequiredArgsConstructor and @AllArgsConstructor
 
@@ -36,7 +43,7 @@ ummm...
 
 ## @Data
 
-常見大禮包融合了 `@Getter`、`@Setter`、`@ToString`、`@EqualsAndHashCode` and `@RequiredArgsConstructor` 
+坑爹大禮包，融合了 `@Getter`、`@Setter`、`@ToString`、`@EqualsAndHashCode` and `@RequiredArgsConstructor` 
 
 但你最好別用它，理由請看這篇 [什麼? @Data 可能要繳稅](./Lombok@Data坑.md)
 
