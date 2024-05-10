@@ -2,7 +2,7 @@
 
 ## val / var 
 
-類似 Groovy 的 `def`，Java 17 也有支援，通常建議使用原生或 Groovy & Kotlin 較好
+類似 Groovy 的 `def`，Java 新版本也有自己的 `var`，通常建議使用原生或 Groovy & Kotlin 較好
 
 ## @NonNull
 
