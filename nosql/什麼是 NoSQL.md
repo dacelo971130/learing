@@ -22,7 +22,7 @@
 
 * NoSQL - `Redis`、`MongoDB`、`Cassandra`、`Neo4j`、`Riak`、`Couchbase`、`Elasticsearch`、`Kafka`
 
-## NoSQL 為什麼使用/什麼時候使用 
+## NoSQL 為什麼使用/什麼時候使用 (未完待續..)
 
 * 處理 RDBMS 無法處理的問題
 
