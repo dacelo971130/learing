@@ -1,6 +1,17 @@
 # 目錄
 
 紀錄個人技術學習、使用之筆記，如有錯誤還望海涵，會盡快修正
+## 前端
+
+[HTML - 基本](./)
+
+[CSS - 基本](./)
+
+[JavaScript - 基本](./)
+
+[ajax - 基本](./)
+
+[JQuery - 基本](./)
 
 ## 後端
 
@@ -10,23 +21,29 @@
 
 ### SQL
 
-[SQL - 常用指令]
+[SQL - 常用指令](./)
 
-[MySQL - 基本操作]
+[MySQL - 基本操作](./)
 
 ### NoSQL
 
-[Redis - 基本操作]
+[Redis - 基本操作](./)
 
-[MongoDB - 基本操作]
+[MongoDB - 基本操作](./)
 
-[Cassandra - 基本操作]
+[Cassandra - 基本操作](./)
 
 ### Spring-boot
 
 [Jasypt - 將 application.properties 重要資訊加密](./spring-boot/spring-boot-jasypt.md)
 
 [Jackson - 將多階層的 JSON 物件轉成 Java Class (針對大寫 Key)](./spring-boot/spring-boot-jackson.md)
+
+### Spring Data
+
+[JPA - 使用](./)
+
+[Mybaits - ..](./)
 
 ## Test
 
