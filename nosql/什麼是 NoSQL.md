@@ -62,27 +62,27 @@
 
 * `Document Database`
 
-  * 特性 - 採用 `Key-Value` 資料架構建立分散式的資料庫，具有水平擴充性，能按需求增加資料庫
+  * 特性 - 可儲存結構鬆散或非結構性的資料
 
-  * 用途 - 儲存社群網或社交遊戲產生的 `TB` 或 `PB` 等級資料
+  * 用途 - 適合用來儲存網頁料或 `XML`、JSON 格式的文件，也可以儲存圖片或影片資料
 
-  * 產品 -  `Google BigTable`、`Hadoop HBase`、`Amazon Dynamo`、`Apache Cassandra`、`Hypertable`
+  * 產品 -  `CouchDB`、`MongoDB`、`Riak`
 
-* `Column-Family Database`
+* `In-memory DataBase`
 
-  * 特性 - 採用 `Key-Value` 資料架構建立分散式的資料庫，具有水平擴充性，能按需求增加資料庫
+  * 特性 - 利用記憶體建立分散式資料庫，增加 `cache` 讀取資料速度
 
-  * 用途 - 儲存社群網或社交遊戲產生的 `TB` 或 `PB` 等級資料
+  * 用途 - 網站快取
 
-  * 產品 -  `Google BigTable`、`Hadoop HBase`、`Amazon Dynamo`、`Apache Cassandra`、`Hypertable`
+  * 產品 - `Redis`、`Memcached`
 
 * `Graph Database`
 
-  * 特性 - 採用 `Key-Value` 資料架構建立分散式的資料庫，具有水平擴充性，能按需求增加資料庫
+  * 特性 - 運用圖學架構來儲存節點間關係資料庫，基本的資料結構包刮節點、關係和屬性
 
-  * 用途 - 儲存社群網或社交遊戲產生的 `TB` 或 `PB` 等級資料
+  * 用途 - 樹狀結構紀錄社交網站的朋友關係，儲存地圖上每一點和鄰近點的關係，可以計算點與點之間最短距離
 
-  * 產品 -  `Google BigTable`、`Hadoop HBase`、`Amazon Dynamo`、`Apache Cassandra`、`Hypertable`
+  * 產品 - `Neo4j`、`InfoGrid`、`AllegroGrph`
 
 ## 參考
 
