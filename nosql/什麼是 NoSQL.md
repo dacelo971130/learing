@@ -1,20 +1,26 @@
 # 什麼是 NoSQL
 
-什麼是 `NoSQL` 全名是 Not Only SQL，又稱非關聯式資料庫
+什麼是 NoSQL 全名是 Not Only SQL，又稱非關聯式資料庫
 
-## 兩個主要特點
+## 特色
 
-* 資料之間是無關係的，關聯式資料庫有主外鍵約束，而 `NoSQL` 弱化這種觀念
+* 資料之間是無關係的，關聯式資料庫有主外鍵約束，而 NoSQL 弱化這種觀念
 
 * 資料的結構是鬆散的、可變的
 
   * 在關聯式資料庫中，如果表有 5 個列，那麼最多只能儲存 5 個列的值
 
-   * 在 `NoSQL` 中沒有所謂的固定列數，甚至連列都沒有，所以，儲存型態的類型、資料的多少都是可變、不固定的
+   * 在 NoSQL 中沒有所謂的固定列數，甚至連列都沒有，所以，儲存型態的類型、資料的多少都是可變、不固定的
 
-* `RDBMS`(關聯式資料庫)泛指傳統型資料庫，包括 `PostgreSQL`、`Oracle`、`MySQL`、`MS SQL Server`、`DB2`等，也包括雲端資料庫的 `Amazon RDS`、`Google Cloud SQL`、`Microsoft Azure SQL Database` 
+## 常見 SQL/NoSQL
 
-* `NoSQL` 指的是 `Redis`、`MongoDB`、`Cassandra`、`Neo4j`、`Riak`、`Couchbase`、`Elasticsearch`、`Apache Kafka`等
+* RDBMS(關聯式資料庫)泛指
+ 
+  * 傳統型資料庫 - `PostgreSQL`、`Oracle`、`MySQL`、`MS SQL Server`、`DB2`
+ 
+  * 雲端資料庫 - `Amazon RDS`、`Google Cloud SQL`、`Microsoft Azure SQL Database` 
+
+* NoSQL - `Redis`、`MongoDB`、`Cassandra`、`Neo4j`、`Riak`、`Couchbase`、`Elasticsearch`、`Apache Kafka`
 
 ## NoSQL 為什麼使用/什麼時候使用 
 
@@ -28,7 +34,7 @@
 
 * 面對巨量資料時依然保持良好性能，尤其是**讀寫性能**，得益於它的非關係性和結構簡單
 
-* 靈活的資料格式，使用 `NoSQL` 不必創建列
+* 靈活的資料格式，使用 NoSQL 不必創建列
 
 * 高可用性、高擴展性，具有**主從複製**、**支援叢集**等特點
 
@@ -38,11 +44,11 @@
 
 * 沒有豐富的資料類型 
 
-* 不支援標準 `SQL`，沒有公認的 `NoSQL` 標準
+* 不支援標準 `SQL`，沒有公認的 NoSQL 標準
 
 * 沒有 `RDBMS` 的約束，如主鍵約束、主外鍵約束和值範圍約束等，大多數也沒有索引的概念
 
-* 沒有交易復原概念，優先考慮性能、擴展性，因此大部分 `NoSQL` 不能完全實現 `ACID`，少部分則提供支援，像是如 `Couchbase` 和 `MongoDB` 的某些部分
+* 沒有交易復原概念，優先考慮性能、擴展性，因此大部分 NoSQL 不能完全實現 `ACID`，少部分則提供支援，像是如 `Couchbase` 和 `MongoDB` 的某些部分
 
 ##  NoSQL 種類
 
