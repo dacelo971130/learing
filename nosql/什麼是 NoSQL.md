@@ -83,3 +83,11 @@
   * 用途 - 儲存社群網或社交遊戲產生的 `TB` 或 `PB` 等級資料
 
   * 產品 -  `Google BigTable`、`Hadoop HBase`、`Amazon Dynamo`、`Apache Cassandra`、`Hypertable`
+
+## 參考
+
+[什麼是 NoSQL？](https://aws.amazon.com/tw/nosql/)
+
+[快速認識4類主流NoSQL資料庫](https://www.ithome.com.tw/news/92507)
+
+[NoSQL Databases: What Every Data Scientist Needs to Know](https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know)
