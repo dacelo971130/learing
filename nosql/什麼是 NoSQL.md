@@ -20,7 +20,7 @@
  
   * 雲端資料庫 - `Amazon RDS`、`Google Cloud SQL`、`Microsoft Azure SQL Database` 
 
-* NoSQL - `Redis`、`MongoDB`、`Cassandra`、`Neo4j`、`Riak`、`Couchbase`、`Elasticsearch`、`Apache Kafka`
+* NoSQL - `Redis`、`MongoDB`、`Cassandra`、`Neo4j`、`Riak`、`Couchbase`、`Elasticsearch`、`Kafka`
 
 ## NoSQL 為什麼使用/什麼時候使用 
 
