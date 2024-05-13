@@ -3,15 +3,15 @@
 紀錄個人技術學習、使用之筆記，如有錯誤還望海涵，會盡快修正
 ## 前端
 
-[HTML - 基本](./)
+[HTML](./)
 
-[CSS - 基本](./)
+[CSS](./)
 
-[JavaScript - 基本](./)
+[JavaScript](./)
 
-[ajax - 基本](./)
+[ajax](./)
 
-[JQuery - 基本](./)
+[JQuery](./)
 
 ## 後端
 
@@ -27,11 +27,11 @@
 
 ### NoSQL
 
-[Redis - 基本操作](./)
+[Redis](./)
 
-[MongoDB - 基本操作](./)
+[MongoDB](./)
 
-[Cassandra - 基本操作](./)
+[Cassandra](./)
 
 ### Spring-boot
 
@@ -41,9 +41,9 @@
 
 ### Spring Data
 
-[JPA - 使用](./)
+[JPA](./)
 
-[Mybaits - ..](./)
+[Mybaits](./)
 
 ## Test
 
@@ -51,7 +51,7 @@
 
 ## MQ
 
-[RabbitMQ - ..](./)
+[RabbitMQ](./)
 
 [Kafka](./)
 
