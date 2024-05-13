@@ -49,6 +49,12 @@
 
 [JMeter - 流量測試](./test/JMeter.md)
 
+## MQ
+
+[RabbitMQ - ..](./)
+
+[Kafka](./)
+
 ## Other
 
 [自製簡易且樸素的 Google slide template](./other/GoogleSlide.md)
