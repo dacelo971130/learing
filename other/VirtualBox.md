@@ -1,6 +1,10 @@
 # VirtualBox & ubuntu 安裝 & 設定
 
-* 官網下載 virtualBox & ubuntu -22.04.4
+## 概述
+
+為了方便模擬客戶環境 1 core/ram 2g/linux 等設定，來設置 VM 跑 
+
+## 下載 VirtualBox 主程式與 ubuntu -22.04.4 映像檔
 
 ## 建立虛擬機
 
