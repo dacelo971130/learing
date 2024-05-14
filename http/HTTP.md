@@ -152,7 +152,6 @@ username=tw123&password=tw123456
 | 200 | OK! 請求成功  |
 | 301/302 | Moved Permanently (重新導向) : 請求的 URL 已被移走。 Reponse 中的 `Location URL` 則提示資源所在位置  |
 | 404  | Not Found : 未找到資源  |
-| 401  | 禁止快取  |
 | 500 | 伺服器錯誤  |
 
 ## URL Encode
