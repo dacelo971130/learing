@@ -131,6 +131,18 @@ Simple file.
 username=tw123&password=tw123456
 ```
 
+## Web 通訊如何做到安全
+
+1. 只有瀏覽器和 Web Server 能看到真正內容 (中間人(Proxy Server)也不行，)
+
+2. HTTP 請求內容與回應內容，無法被篡改
+
+### 那要如何實現?
+
+ 1. 使用加密演算法(非對稱加密、對稱加密、DES、RSA)，對內容做加密處理，並且對每個廠商使用不同種類加密演算法，且定期更新
+ 
+ 2. 使用 SSL/TLS (SSL 所有版本已不再安全，應該使用 TLS)
+
 ## HTTP 狀態碼
 
 | Code  | state |
@@ -140,13 +152,9 @@ username=tw123&password=tw123456
 | 404  | Not Found : 未找到資源  |
 | 500 | 伺服器錯誤  |
 
-## URL Encode
+## 其他關鍵字
 
-## Cookie
-
-## HTTP 基本認證
-
-## Web 通訊如何做到安全
+* Cookie、URL Encode、Cache
 
 ## 工具
 
