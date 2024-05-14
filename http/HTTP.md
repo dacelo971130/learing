@@ -102,6 +102,7 @@ Simple file.
 
 ```
 
+3. 得到 HTTP Code 200 ok! 回應判斷結果 
 
 ### 回應封包
 
