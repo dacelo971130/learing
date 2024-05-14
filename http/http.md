@@ -15,7 +15,7 @@
 ```
 schema://host[:port#]/path/../[?..query-string][#anchor]
 ```
-* URL 格式對應說明
+* 對應說明
 
   * schema - 指定低層使用的協定 (例如: http，https，ftp)
 
@@ -35,17 +35,19 @@ schema://host[:port#]/path/../[?..query-string][#anchor]
 http://www.mywebsite.com/tankxiao/test/test.aspx?name=sviergn&x=true#stuff
 ```
 
-schema - http
+* 範例對應
 
-host - www.mywebsite.com
+ * schema - http
 
-port# - 8080，這裡沒有顯示而已，被包在 host 裡面
+ * host - www.mywebsite.com
 
-path - /tankxiao/test/test.aspx
+ * port# - 8080，這裡沒有顯示而已，被包在 host 裡面
 
-query-string - name=sviergn&x=true
+ * path - /tankxiao/test/test.aspx
 
-anchor - stuff
+ * query-string - name=sviergn&x=true
+
+ * anchor - stuff
 
 ## 原理
 
