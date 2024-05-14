@@ -162,7 +162,7 @@ Fiddler、JMeter、Postman
 
 ## 參考
 
-書籍 - 晉升成 HTTP 一代宗師 Java 實作
+書籍 - 晉升成 HTTP 一代宗師 Java 實作 (吐槽: 根本沒有 Java 任何成分 lol)
 
 [HTTP Method - mdn web docs](https://developer.mozilla.org/zh-TW/docs/Web/HTTP/Methods)
 
