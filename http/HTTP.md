@@ -154,7 +154,7 @@ username=tw123&password=tw123456
 
 ## 其他關鍵字
 
-* Cookie、URL Encode、Cache、Base64、MD5
+* Cookie、URL Encode、Cache、Base64、MD5、stamp(時間戳記)、sign(數位簽章)
 
 ## 工具
 
