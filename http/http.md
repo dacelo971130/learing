@@ -15,18 +15,19 @@
 ```
 schema://host[:port#]/path/../[?..query-string][#anchor]
 ```
+* URL 格式對應說明
 
-schema - 指定低層使用的協定 (例如: http，https，ftp)
+  * schema - 指定低層使用的協定 (例如: http，https，ftp)
 
-host - HTTP Server 的 Ip 位址或域名
+  * host - HTTP Server 的 Ip 位址或域名
 
-port# - HTTP Server 的預設通訊阜是 80
+  * port# - HTTP Server 的預設通訊阜是 80
 
-path - 存取資源的路徑
+  * path - 存取資源的路徑
 
-query-string - 發送給 HTTP Server 的資料
+  * query-string - 發送給 HTTP Server 的資料
 
-anchor - 錨點
+  * anchor - 錨點
 
 * 範例
 
