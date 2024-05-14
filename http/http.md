@@ -38,7 +38,7 @@ schema - http
 
 host - www.mywebsite.com
 
-port# - 8080，這裡沒有顯示爾已，被包在 host 裡面
+port# - 8080，這裡沒有顯示而已，被包在 host 裡面
 
 path - /tankxiao/test/test.aspx
 
@@ -60,14 +60,27 @@ anchor - stuff
 
 ## Web 通訊如何做到安全
 
-## HTTP 請求方法
+## HTTP 常用方法
 
 | Method  | Description |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| GET | 請求資源  |
+| POST | 修改資源  |
+| PUT  | 全部修改  |
+| PATH  | 部分修改  |
+| DELETE | 刪除資源  |
+| HEAD | 發送表頭資源  |
 
 ## HTTP 狀態碼
+
+| Code  | state |
+| ------------- | ------------- |
+| 200 | 請求資源  |
+| 400 | 修改資源  |
+| 403  | 全部修改  |
+| 406  | 部分修改  |
+| 500 | 刪除資源  |
+| HEAD | 發送表頭資源  |
 
 ## HTTP Header
 
@@ -79,6 +92,12 @@ anchor - stuff
 
 ## HTTP 基本認證
 
+## 工具
+
+Fiddler、JMeter、Postman
+
 ## 參考
 
 書籍 - 晉升成 HTTP 一代宗師 Java 實作
+
+[HTTP Method - mdn web docs](https://developer.mozilla.org/zh-TW/docs/Web/HTTP/Methods)
