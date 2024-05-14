@@ -50,25 +50,29 @@ http://www.mywebsite.com/tankxiao/test/test.aspx?name=sviergn&x=true#stuff
 
   *  anchor - stuff
 
-## 原理
-
 ## HTTP 封包結構
 
-### 請求封包結構
+## 請求封包
 
-### 回應封包結構
+* Header
 
-## HTTP 為什麼不安全
+  * POST: http://tw123.vip.io/vip999/user-login.html HTTP/1.1 (HTTP/2.0) 
 
-瀏覽器發送給 Server 的內容非常容易被中間人攔截，許多工具都可以攔截的到
+  * Host: tw123.vip.io (localhost:8080)
 
-```
-username=tw123&password=tw123456
-```
+  * User-Agent: Mozilla/5.0 (Windos NT6.1;WOW64;rv:54.0) Firefox/54.0
 
-## Web 通訊如何做到安全
+  * Accept-Encoding: gzip, deflate
 
-## HTTPS 又是怎麼一回事
+  * Content-Type: application/x-ww-form-urlencoded (application/json)
+
+  * Referer: http://tw123.vip.io/vip999/user-login.html
+
+  * Connection: keep-alive
+
+* Body : account=book&password=5f4dcc3b5aa765d61d8315615614
+
+## 回應封包
 
 
 
@@ -103,6 +107,16 @@ username=tw123&password=tw123456
 ## Cookie
 
 ## HTTP 基本認證
+
+## HTTP 為什麼不安全
+
+瀏覽器發送給 Server 的內容非常容易被中間人攔截，許多工具都可以攔截的到
+
+```
+username=tw123&password=tw123456
+```
+
+## Web 通訊如何做到安全
 
 ## 工具
 
