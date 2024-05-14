@@ -104,10 +104,6 @@ Simple file.
 
 3. 得到 HTTP Code 200 ok! 回應判斷結果 
 
-### 回應封包
-
-
-
 ## HTTP 常用方法
 
 | Method  | Description |
@@ -119,34 +115,51 @@ Simple file.
 | DELETE | 刪除資源  |
 | HEAD | 發送表頭資源  |
 
+### GET & POST 差異
+
+* 資料傳輸方式
+
+  * GET 以 `?` 分割 URL 和傳輸資料 `user?userId=abc&pwd=123456`
+
+  * POST 將傳送資料放進 HTTP 封包中的 Body
+
+* 長度限制 
+
+  * GET 有長度限制 (瀏覽器對 URL 有長度限制)
+
+  * POST 沒有長度限制
+
+* 取得方式
+
+  * GET 使用 `Request.QueryString` 取得變數值
+
+  * POST 使用 `Request.Form` 取得變數值
+
+* GET 有安全問題，太容易暴露隱密資訊
+
+## HTTP 為什麼不安全
+
+瀏覽器發送給 Server 的內容非常容易被中間人攔截，許多工具(Fiddler)都可以攔截的到
+
+```
+username=tw123&password=tw123456
+```
+
 ## HTTP 狀態碼
 
 | Code  | state |
 | ------------- | ------------- |
-| 200 | 請求資源  |
-| 400 | 修改資源  |
-| 403  | 全部修改  |
-| 406  | 部分修改  |
-| 500 | 刪除資源  |
-| HEAD | 發送表頭資源  |
-
-## HTTP Header
-
-## HTTP Cache
+| 200 | OK! 請求成功  |
+| 301/302 | Moved Permanently (重新導向) : 請求的 URL 已被移走。 Reponse 中的 `Location URL` 則提示資源所在位置  |
+| 404  | Not Found : 未找到資源  |
+| 401  | 禁止快取  |
+| 500 | 伺服器錯誤  |
 
 ## URL Encode
 
 ## Cookie
 
 ## HTTP 基本認證
-
-## HTTP 為什麼不安全
-
-瀏覽器發送給 Server 的內容非常容易被中間人攔截，許多工具都可以攔截的到
-
-```
-username=tw123&password=tw123456
-```
 
 ## Web 通訊如何做到安全
 
