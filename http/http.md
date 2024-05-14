@@ -14,19 +14,20 @@
 
 ```
 schema://host[:port#]/path/../[?..query-string][#anchor]
+```
 
 schema - 指定低層使用的協定 (例如: http，https，ftp)
 host - HTTP Server 的 Ip 位址或域名
 port# - HTTP Server 的預設通訊阜是 80
 path - 存取資源的路徑
-query-string - 發送給 HTTP Server 的資料，舉例: http://localhost:8080/user/1 或 http://localhost:8080/admin/user/userId?1
+query-string - 發送給 HTTP Server 的資料
 anchor - 錨點
-```
 
 * 範例
 
 ```
 http://www.mywebsite.com/tankxiao/test/test.aspx?name=sviergn&x=true#stuff
+```
 
 schema - http
 host - www.mywebsite.com
@@ -34,7 +35,6 @@ port# - 8080，這裡沒有顯示爾已，被包在 host 裡面
 path - /tankxiao/test/test.aspx
 query-string - name=sviergn&x=true
 anchor - stuff
-```
 
 ## 原理
 
