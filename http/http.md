@@ -37,17 +37,17 @@ http://www.mywebsite.com/tankxiao/test/test.aspx?name=sviergn&x=true#stuff
 
 * 範例對應
 
- * schema - http
+   * schema - http
+  
+  * host - www.mywebsite.com
 
- * host - www.mywebsite.com
+  * port# - 8080，這裡沒有顯示而已，被包在 host 裡面
 
- * port# - 8080，這裡沒有顯示而已，被包在 host 裡面
+  * path - /tankxiao/test/test.aspx
 
- * path - /tankxiao/test/test.aspx
+  * query-string - name=sviergn&x=true
 
- * query-string - name=sviergn&x=true
-
- * anchor - stuff
+  *  anchor - stuff
 
 ## 原理
 
