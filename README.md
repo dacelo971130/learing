@@ -4,15 +4,15 @@
 
 ## 前端
 
-[HTML](./)
+[HTML]
 
-[CSS](./)
+[CSS]
 
-[JavaScript](./)
+[JavaScript]
 
-[ajax](./)
+[ajax]
 
-[JQuery](./)
+[JQuery]
 
 ## 後端
 
@@ -22,17 +22,17 @@
 
 ### SQL
 
-[SQL - 常用指令](./)
+[SQL - 常用指令]
 
-[MySQL - 基本操作](./)
+[MySQL - 基本操作]
 
 ### NoSQL
 
-[Redis](./)
+[Redis]
 
-[MongoDB](./)
+[MongoDB]
 
-[Cassandra](./)
+[Cassandra]
 
 ### Spring-boot
 
@@ -52,9 +52,9 @@
 
 ### MQ
 
-[RabbitMQ](./)
+[RabbitMQ]
 
-[Kafka](./)
+[Kafka]
 
 ## Other
 
@@ -68,10 +68,7 @@
 
 ## IntelliJ
 
-[常用快捷鍵](./)
+[常用快捷鍵]
 
-[常用插件](./)
+[常用插件]
 
-## 面試
-
-[Java 面試題收集(一)](./java/Q1.md)
