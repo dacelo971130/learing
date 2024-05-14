@@ -57,17 +57,19 @@
 
 ## Other
 
+[2](./other/VirtualBox)
+
 [自製簡易且樸素的 Google slide template](./other/GoogleSlide.md)
+
+## linux
+
+[Linux 基礎指令](https://www.wongwonggoods.com/all-posts/linux/linux_basic/linux-ubuntu-terminal-basic/)
 
 ## IntelliJ
 
 [常用快捷鍵](./)
 
 [常用插件](./)
-
-## linux
-
-[Linux 基礎指令](https://www.wongwonggoods.com/all-posts/linux/linux_basic/linux-ubuntu-terminal-basic/)
 
 ## 面試
 
