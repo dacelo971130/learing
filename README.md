@@ -58,7 +58,7 @@
 
 ## Other
 
-[VirtualBox & ubuntu 安裝 & 設定](./other/VirtualBox)
+[VirtualBox & ubuntu 安裝 & 設定](./other/VirtualBox.md)
 
 [自製簡易且樸素的 Google slide template](./other/GoogleSlide.md)
 
