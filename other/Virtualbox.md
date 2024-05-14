@@ -18,6 +18,31 @@
 
 ## 其他
 
+調整視窗
+
+```
+$ xrandr -s 1920x1080
+```
+
+下載最新套件
+
+```
+$ sudo apt-get update
+```
+
+解決雙向複製問題
+
+```
+$ sudo apt install dkms build-essential linux-headers-generic
+```
+
+裝置>插入Guest Additions CD映像
+
+```
+$ sudo apt install virtualbox-guest-x11 
+$ sudo VBoxClient –clipboard 
+```
+
 ## 參考
 [在 VirtualBox 中安裝 Ubuntu 22.04：建立虛擬環境的步驟](https://ithelp.ithome.com.tw/articles/10314329)
 [在虛擬機上下載 Ubuntu22.04](https://hackmd.io/@VlKF_DoARpms11MmypZ2lg/howard)
