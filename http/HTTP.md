@@ -133,7 +133,7 @@ username=tw123&password=tw123456
 
 ## Web 通訊如何做到安全
 
-1. 只有瀏覽器和 Web Server 能看到真正內容 (中間人(Proxy Server)也不行，)
+1. 只有瀏覽器和 Web Server 能看到真正內容，中間人(Proxy Server)也不行
 
 2. HTTP 請求內容與回應內容，無法被篡改
 
