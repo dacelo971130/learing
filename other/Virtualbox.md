@@ -18,7 +18,7 @@
 
 ## 其他
 
-Terminal 叫不出來的話，先手動點 store 更新
+Terminal 叫不出來的話，先手動點 store 更新所有 software
 
 調整視窗
 
