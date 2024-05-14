@@ -65,6 +65,10 @@
 
 [常用插件](./)
 
+## linux
+
+[Linux 基礎指令](https://www.wongwonggoods.com/all-posts/linux/linux_basic/linux-ubuntu-terminal-basic/)
+
 ## 面試
 
 [Java 面試題收集(一)](./java/Q1.md)
