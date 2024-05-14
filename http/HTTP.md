@@ -15,6 +15,7 @@
 ```
 schema://host[:port#]/path/../[?..query-string][#anchor]
 ```
+
 * 對應說明
 
   * schema - 指定低層使用的協定 (例如: http，https，ftp)
@@ -59,9 +60,17 @@ http://www.mywebsite.com/tankxiao/test/test.aspx?name=sviergn&x=true#stuff
 
 ## HTTP 為什麼不安全
 
-## HTTPS 又是怎麼一回事
+瀏覽器發送給 Server 的內容非常容易被中間人攔截，許多工具都可以攔截的到
+
+```
+username=tw123&password=tw123456
+```
 
 ## Web 通訊如何做到安全
+
+## HTTPS 又是怎麼一回事
+
+
 
 ## HTTP 常用方法
 
