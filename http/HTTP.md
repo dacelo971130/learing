@@ -10,13 +10,13 @@
 
 * URL - 統一資源定位器(Uniform Resource Locator)，用於完整描述網路上某一處資源的位址
 
-* URL 格式
+## URL 格式
 
 ```
 schema://host[:port#]/path/../[?..query-string][#anchor]
 ```
 
-* URL 格式對應說明
+* 對應說明
 
   * schema - 指定低層使用的協定 (例如: http，https，ftp)
 
@@ -30,13 +30,13 @@ schema://host[:port#]/path/../[?..query-string][#anchor]
 
   * anchor - 錨點
 
-* 範例
+範例
 
 ```
 http://www.mywebsite.com/tankxiao/test/test.aspx?name=sviergn&x=true#stuff
 ```
 
-* 範例對應說明
+* 對應說明
 
    * schema - http
   
