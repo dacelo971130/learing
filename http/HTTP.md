@@ -16,7 +16,7 @@
 schema://host[:port#]/path/../[?..query-string][#anchor]
 ```
 
-* 對應說明
+* URL 格式對應說明
 
   * schema - 指定低層使用的協定 (例如: http，https，ftp)
 
@@ -36,7 +36,7 @@ schema://host[:port#]/path/../[?..query-string][#anchor]
 http://www.mywebsite.com/tankxiao/test/test.aspx?name=sviergn&x=true#stuff
 ```
 
-* 範例對應
+* 範例對應說明
 
    * schema - http
   
@@ -50,29 +50,60 @@ http://www.mywebsite.com/tankxiao/test/test.aspx?name=sviergn&x=true#stuff
 
   *  anchor - stuff
 
-## HTTP 封包結構
+## 送出一張包含 form 的 html 會發生什麼事
 
-## 請求封包
+1.於瀏覽器按下 submit 後
 
-* Header
+uploadFile.html
 
-  * POST: http://tw123.vip.io/vip999/user-login.html HTTP/1.1 (HTTP/2.0) 
+```
+<form
+  action="http://localhost:8000/"
+  method="post"
+  enctype="multipart/form-data">
+  <label>Name: <input name="myTextField" value="Test" /></label>
+  <label><input type="checkbox" name="myCheckBox" /> Check</label>
+  <label>
+    Upload file: <input type="file" name="myFile" value="test.txt" />
+  </label>
+  <button>Send the file</button>
+</form>
 
-  * Host: tw123.vip.io (localhost:8080)
+```
 
-  * User-Agent: Mozilla/5.0 (Windos NT6.1;WOW64;rv:54.0) Firefox/54.0
+2.form 會以下方封包結構方式送出
 
-  * Accept-Encoding: gzip, deflate
+```
+POST / HTTP/1.1
+Host: localhost:8000
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:50.0) Gecko/20100101 Firefox/50.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Content-Type: multipart/form-data; boundary=---------------------------8721656041911415653955004498
+Content-Length: 465
 
-  * Content-Type: application/x-ww-form-urlencoded (application/json)
+-----------------------------8721656041911415653955004498
+Content-Disposition: form-data; name="myTextField"
 
-  * Referer: http://tw123.vip.io/vip999/user-login.html
+Test
+-----------------------------8721656041911415653955004498
+Content-Disposition: form-data; name="myCheckBox"
 
-  * Connection: keep-alive
+on
+-----------------------------8721656041911415653955004498
+Content-Disposition: form-data; name="myFile"; filename="test.txt"
+Content-Type: text/plain
 
-* Body : account=book&password=5f4dcc3b5aa765d61d8315615614
+Simple file.
+-----------------------------8721656041911415653955004498--
 
-## 回應封包
+```
+
+
+### 回應封包
 
 
 
@@ -127,3 +158,5 @@ Fiddler、JMeter、Postman
 書籍 - 晉升成 HTTP 一代宗師 Java 實作
 
 [HTTP Method - mdn web docs](https://developer.mozilla.org/zh-TW/docs/Web/HTTP/Methods)
+
+[MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_Types)
