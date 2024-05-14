@@ -42,7 +42,11 @@ $ sudo apt install dkms build-essential linux-headers-generic
 
 ```
 $ sudo apt install virtualbox-guest-x11 
-$ sudo VBoxClient –clipboard 
+$ sudo VBoxClient -–clipboard
+
+====
+<! 出問題的話，查一下指令有沒有變>
+$ sudo VBoxClient -–help
 ```
 
 ## 參考
