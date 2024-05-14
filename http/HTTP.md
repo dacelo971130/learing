@@ -12,43 +12,26 @@
 
 ## URL 格式
 
-```
-schema://host[:port#]/path/../[?..query-string][#anchor]
-```
-
-* 對應說明
-
-  * schema - 指定低層使用的協定 (例如: http，https，ftp)
-
-  * host - HTTP Server 的 Ip 位址或域名
-
-  * port# - HTTP Server 的預設通訊阜是 80
-
-  * path - 存取資源的路徑
-
-  * query-string - 發送給 HTTP Server 的資料
-
-  * anchor - 錨點
-
 範例
 
 ```
 http://www.mywebsite.com/tankxiao/test/test.aspx?name=sviergn&x=true#stuff
 ```
 
-* 對應說明
+格式
 
-   * schema - http
-  
-  * host - www.mywebsite.com
+```
+schema://host[:port#]/path/../[?..query-string][#anchor]
+```
 
-  * port# - 8080，這裡沒有顯示而已，被包在 host 裡面
-
-  * path - /tankxiao/test/test.aspx
-
-  * query-string - name=sviergn&x=true
-
-  *  anchor - stuff
+| Key  | Value | Description |
+| ------------- | ------------- | ------------- |
+| schema | http  | 指定低層使用的協定 (例如: http，https，ftp) |
+| host | www.mywebsite.com  | HTTP Server 的 Ip 位址或域名 |
+| port#  | 8080，這裡沒有顯示而已，被包在 host 裡面  | HTTP Server 的預設通訊阜是 80 |
+| path  | /tankxiao/test/test.aspx  | 存取資源的路徑 |
+| query-string | name=sviergn&x=true  | 發送給 HTTP Server 的資料 |
+| anchor | stuff  | 錨點 |
 
 ## 送出一張包含 form 的 html 會發生什麼事
 
