@@ -123,3 +123,7 @@ public boolean equals(final Object o) {
 ## 推薦套件
 
 SonarLint - 免費 coding 檢查工具，這種問題它也有檢核到
+
+## 參考
+
+[https://zhuanlan.zhihu.com/p/415294727](https://zhuanlan.zhihu.com/p/415294727)
