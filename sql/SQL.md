@@ -58,6 +58,41 @@ SELECT DISTINCT Country FROM Customers;
 
 ### WHERE
 
+語法 :
+```
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+```
+
+範例 :
+```
+SELECT * FROM Customers WHERE Country='Mexico';
+
+SELECT * FROM Customers WHERE CustomerID=1;
+
+SELECT * FROM Customers WHERE CustomerID > 80;
+
+SELECT * FROM Products WHERE Price BETWEEN 50 AND 60;
+
+SELECT * FROM Customers WHERE City LIKE 's%';
+
+SELECT * FROM Customers WHERE City IN ('Paris','London');
+```
+
+其他相關:
+| 運算符  | 說明 |
+| ------------- | ------------- |
+| =  | 等於  |
+| >  | 大於  |
+| <  | 小於 |
+| >= | 大於等於  |
+| <= | 小於等於  |
+| <> | 不等於，有些版本為 !=  |
+| BETWEEN  | 某數到某數之間 |
+| LIKE  | regex 的用法  |
+| IN  | 包含在某個列表內  |
+
 ### 創建 Database
 
 ```
