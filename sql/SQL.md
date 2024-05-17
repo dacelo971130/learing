@@ -1,3 +1,17 @@
+## 基本語法
+
+### 創建 Database
+
+```
+create database `sql_tutorial`;
+```
+
+### 查詢所有 Database
+
+```
+show databases;
+```
+
 ## 什麼是 Foreign key
 
 已下列表格為例
