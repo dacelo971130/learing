@@ -93,6 +93,22 @@ SELECT * FROM Customers WHERE City IN ('Paris','London');
 | LIKE  | regex 的用法  |
 | IN  | 包含在某個列表內  |
 
+### ORDER
+
+語法 :
+```
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC;
+```
+
+範例 :
+```
+SELECT * FROM Products ORDER BY Price;
+```
+
+說明: `DISTINCT` 會對後方 `column1` 做篩選，只取出 Table 中 `column1` 不重複的部分。
+
 ### 創建 Database
 
 ```
