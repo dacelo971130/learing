@@ -1,6 +1,6 @@
 ## 基本型態
 
-
+* 4515
 
 ## 基本語法
 
@@ -17,6 +17,46 @@
 * `DROP TABLE` - deletes a table
 * `CREATE INDEX` - creates an index (search key)
 * `DROP INDEX` - deletes an index
+
+### 
+
+語法 :
+```
+SELECT column1, column2, ...FROM table_name;
+```
+
+範例 :
+```
+SELECT CustomerName, City FROM Customers;
+```
+
+### SELECT
+
+語法 :
+```
+SELECT column1, column2, ...FROM table_name;
+```
+
+範例 :
+```
+SELECT CustomerName, City FROM Customers;
+```
+
+### SELECT DISTINCT
+
+語法 :
+```
+SELECT DISTINCT column1, column2, ...FROM table_name;
+```
+
+範例 :
+```
+SELECT DISTINCT Country FROM Customers;
+```
+
+說明: `DISTINCT` 會對後方 `column1` 做篩選，只取出 Table 中 `column1` 不重複的部分。
+
+### WHERE
 
 ### 創建 Database
 
