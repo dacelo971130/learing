@@ -24,6 +24,34 @@ java -cp C:\prg\classes book.java7.chapter.water.Fish
 jar -cvf sample.jar
 ```
 
+### import 是否會影響效能?
+
+不會，只會增加編譯時間。
+
+### 命名 package 名稱
+
+一律小寫
+
+```
+package com
+package book.java7.chapter1
+```
+
+### DAO 設計模式命名規則
+
+封裝來自客戶端的數據訪問實現，不同接口方法將有對應的實現，不互相影響。
+
+```
+public Person getPerson(int id) throws DataAccessException
+public void createPerson(Person p) throws DataAccessException
+public void deletePerson(int id) throws DataAccessException
+public void updatePerson(Person p) throws DataAccessException
+```
+
+* getXXX() : 單筆資料。
+* queryXXX() : queryPersonAll()多筆資料。
+* findXXX() : findPersonById()。
+
 ### 存取修飾字(Modifier)
 
 * public : 皆可存取。
@@ -34,9 +62,6 @@ jar -cvf sample.jar
 
 * protected : 同一個 package 下的 classes 皆可存取。若在不同 package 下的 classes 要有繼承關係才可存取。
 
-### import 是否會影響效能?
-
-不會，只會增加編譯時間。
 
 ## 流程控制
 
