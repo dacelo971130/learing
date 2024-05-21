@@ -2,16 +2,27 @@
 
 ## 基礎
 
+Java 的資料型別分為兩種，基本資料型別(Primitive Type)和參考資料型別(Reference Type)
+
 ### 基本資料型別
 
-* 基本資料型別(Primitive Type) :
-* 參考資料型別(Reference Type) :
+### 參考資料型別
+
+### 記憶體如何儲存 Java 變數
+
+![javaRAM](https://github.com/dacelo971130/learing/assets/83411220/eca51057-e48f-484e-8a80-5ad0610396b7)
+
+* Global : 存放 `static` 的類別成員變數。
+
+* Stack : 存放基本資料型別(Primitive Type)的變數內容或物件參考內容值(object reference variable)的地方。
+
+* Heap : 存放
 
 ### classpath
 
 在系統環境變數中所設的 CLASSPATH，其提供 java 程式(jdk8..etc)在執行環境中，尋找類別與其他相關資源的路徑。
 
-對於一些命令工具，例如 : `java`、`javac`、`javadoc`也提供 `-classpth`(-cp) 等指令。
+對於一些命令工具，例如 : `java`、`javac`、`javadoc` 也提供 `-classpth`(-cp) 等指令。
 
 ### -cp
 
