@@ -2,6 +2,11 @@
 
 ## 基礎
 
+### 基本資料型別
+
+* 基本資料型別(Primitive Type) :
+* 參考資料型別(Reference Type) :
+
 ### classpath
 
 在系統環境變數中所設的 CLASSPATH，其提供 java 程式(jdk8..etc)在執行環境中，尋找類別與其他相關資源的路徑。
