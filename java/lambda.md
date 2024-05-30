@@ -1,27 +1,54 @@
 # Lambda
 
-語法結構
+## 為什麼使用 lambda?
+
+* 避免過多的 if-else
+* 增加可讀性
+* 提升在大量資料下的集合處理效率
+
+## 使用前後差別
+
+題目: 查詢未成年作家的評分在70以上的書籍，但作家和書籍可能出現重複，需要進行篩選
+
+* Normal
+```
+List<Book> bookList = new ArrayList<>();
+        Set<Book> uniqueBookValues = new HashSet<>();
+        Set<Author> uniqueAuthorValues = new HashSet<>();
+        for (Author author : authors) {
+            if (uniqueAuthorValues.add(author)) {
+                if (author.getAge() < 18) {
+                    List<Book> books = author.getBooks();
+                    for (Book book : books) {
+                        if (book.getScore() > 70) {
+                            if (uniqueBookValues.add(book)) {
+                                bookList.add(book);
+
+                            }
+                        }
+                    }
+                }
+            }
+            System.out.println(bookList);
+        }
+```
+
+* Lambda
 
 ```
-(parameters) -> expression
-
-(parameters) -> {statements;}
+List<Book> collect = authors.stream()
+                .distinct()
+                .filter(author -> author.getAge() < 18)
+                .map(author -> author.getBooks())
+                .flatMap(Collection::stream)
+                .filter(book -> book.getScore() > 70)
+                .distinct()
+                .collect(Collectors.toList());
+        System.out.println(collect);
 ```
 
-跟 groovy 一樣 expression 調用
+## 格式
 
 ```
-MathOperation addition = (a, b) -> a + b;
-```
-
-MathOperation 是一個 interface，他有一個 operation abstract method，labmbda 實現了這個方法，表示 (a, b) -> a + b;
-```
-int result = addition.operation(5, 3);
-System.out.println("5 + 3 = " + result);
-```
-
-搭配集合操作
-```
-List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
-names.forEach(name -> System.out.println(name));
+(參數) -> {代碼}
 ```
