@@ -23,7 +23,6 @@ List<Book> bookList = new ArrayList<>();
                         if (book.getScore() > 70) {
                             if (uniqueBookValues.add(book)) {
                                 bookList.add(book);
-
                             }
                         }
                     }
@@ -62,6 +61,7 @@ List<Book> collect = authors.stream()
 重點2 : 簡化的條件，匿名內部類是接口，且只有一個抽象方法需要重寫，就可以進行簡化
 
 啟動執行緒時，使用內部匿名類別
+
 ```
 new Thread(new Runnable() {
             @Override
@@ -72,6 +72,7 @@ new Thread(new Runnable() {
 ```
 
 使用 lambda 簡化匿名類別
+
 ```
 new Thread(() -> System.out.println("hello lambda")).start();
 ```
@@ -93,6 +94,7 @@ public static int calculateNum(IntBinaryOperator operator) {
 `calculateNum`方法的參數`IntBinaryOperator`是一個 `@FunctionalInterface`並且只有一個抽象方法，符合 lambda 簡化條件
 
 `IntBinaryOperator.java`
+
 ```
 package java.util.function;
 
@@ -103,6 +105,7 @@ public interface IntBinaryOperator {
 ```
 
 接下來我們來呼叫`calculateNum`這個方法，並嘗試簡化他
+
 ```
 int i = calculateNum(new IntBinaryOperator() {
             @Override
@@ -121,6 +124,7 @@ int i = calculateNum(Integer::sum);
 ## 範例三
 
 同上題範例，再來一次
+
 ```
 import java.util.function.IntBinaryOperator;
 
@@ -135,6 +139,7 @@ public static void printNum(IntPredicate predicate) {
 ```
 
 `IntPredicate.java`
+
 ```
 import java.util.Objects;
 
@@ -165,6 +170,7 @@ public interface IntPredicate {
 ```
 
 重點是練習寫出雛形，並成功簡化，`value%2 == 0` 可以是任何公式
+
 ```
 printNum(new IntPredicate() {
             @Override
