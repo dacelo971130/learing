@@ -1,6 +1,4 @@
-# Lambda
-
-## 為什麼使用 lambda?
+# 為什麼使用 lambda?
 
 * 避免過多的 if-else
 * 增加可讀性
