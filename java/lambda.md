@@ -176,6 +176,10 @@ printNum(new IntPredicate() {
                 return value % 2 == 0;
             }
         });
+        
+printNum((int value)->{
+            return value % 2 == 0;
+        });
 
-        printNum(value -> value % 2 == 0);
+printNum(value -> value % 2 == 0);
 ```
