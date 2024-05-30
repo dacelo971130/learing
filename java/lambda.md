@@ -183,3 +183,66 @@ printNum((int value)->{
 
 printNum(value -> value % 2 == 0);
 ```
+
+## 範例四
+
+方法
+
+```
+import java.util.function.Function;
+
+public static <R> R typeConver(Function<String, R> function) {
+        String str = "12345";
+        R result = function.apply(str);
+        return result;
+    }
+```
+
+簡化
+
+```
+Integer i = typeConver(new Function<String, Integer>() {
+            @Override
+            public Integer apply(String s) {
+                return Integer.valueOf(s);
+            }
+        });
+
+Integer i1 = typeConver((String s) -> {
+            return Integer.valueOf(s);
+        });
+
+Integer i2 = typeConver(Integer::valueOf);
+```
+
+## 範例五
+
+方法
+
+```
+import java.util.function.IntConsumer;
+
+public static void foreachArr(IntConsumer consumer) {
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        for (int i : arr) {
+            consumer.accept(i);
+        }
+    }
+```
+
+簡化
+
+```
+foreachArr(new IntConsumer() {
+            @Override
+            public void accept(int i) {
+                System.out.println(i);
+            }
+        });
+
+foreachArr((int i)->{
+            System.out.println(i);
+        });
+
+foreachArr(System.out::println);
+```
