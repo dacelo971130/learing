@@ -246,3 +246,7 @@ foreachArr((int i)->{
 
 foreachArr(System.out::println);
 ```
+
+## 參考
+
+[Lambda表达式&Stream流-函数式编程-java8函数式编程(Lambda表达式，Optional，Stream流)从入门到精通-最通俗易懂](https://www.bilibili.com/video/BV1Gh41187uR?p=10&spm_id_from=pageDriver&vd_source=70dcd67139e73161e818757492ad5332)
