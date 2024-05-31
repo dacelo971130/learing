@@ -31,7 +31,33 @@ getAuthors()
                 .forEach(author -> System.out.println(author)); // 可省略成 .forEach(System.out::println);
 ```
 
-## Stream()
+## 創建 Stream 流
+
+### List: `集合對象.stream()`創建
+
+```
+List<Author> authors = getAuthors();
+Stream<Author> stream = authors.stream();
+```
+
+### Arrays: `Arrays.stream(陣列)`或者使用`Stream.of();`創建
+
+```
+Integer[] arr = {1,2,3,4,5};
+Stream<Integer> stream1 = Arrays.stream(arr);
+Stream<Integer> stream2 = Stream.of(arr);
+```
+
+### Map: 轉換成
+
+```
+Map<String, Integer> map = new HashMap<>();
+        map.put("a", 19);
+        map.put("b", 20);
+        map.put("c", 21);
+
+Stream<Map.Entry<String, Integer>> stream3 = map.entrySet().stream();
+```
 
 ## Filter()
 
