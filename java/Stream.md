@@ -12,8 +12,8 @@
 getAuthors()
                 .stream() // 把集合轉成流
                 .distinct() // 去除重複
-                .filter(author -> author.getAge() < 18)
-                .forEach(new Consumer<Author>() {
+                .filter(author -> author.getAge() < 18) // 過濾 author 年齡小於 18
+                .forEach(new Consumer<Author>() { // 迭代所有 author.toString 查看流裡面的 author 內容
                     @Override
                     public void accept(Author author) {
                         System.out.println(author);
@@ -25,8 +25,42 @@ getAuthors()
 
 ```
 getAuthors()
-                .stream() // 把集合轉成流
-                .distinct() // 去除重複
+                .stream()
+                .distinct()
                 .filter(author -> author.getAge() < 18)
                 .forEach(author -> System.out.println(author)); // 可省略成 .forEach(System.out::println);
 ```
+
+## Stream()
+
+## Filter()
+
+## Peek()
+
+## distinct()
+
+## foreach()
+
+## sorted()
+
+## limit()
+
+## skip()
+
+## flatMap()
+
+## count()
+
+## min() & max()
+
+## collect()
+
+## anyMatch()
+
+## allMatch()
+
+## findAny()
+
+## findFrist()
+
+## reduce()
