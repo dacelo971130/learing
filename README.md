@@ -80,7 +80,7 @@
 
 ## linux
 
-[Linux 基礎指令](https://www.wongwonggoods.com/all-posts/linux/linux_basic/linux-ubuntu-terminal-basic/)
+[Linux 基礎指令-嗡嗡的隨手筆記](https://www.wongwonggoods.com/all-posts/linux/linux_basic/linux-ubuntu-terminal-basic/)
 
 ## IntelliJ
 
