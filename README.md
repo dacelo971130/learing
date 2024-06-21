@@ -59,13 +59,13 @@
 
 [JMeter - 流量測試](./test/JMeter.md)
 
-[TDD](./)
+[TDD]
 
-[BDD](./)
+[BDD]
 
-[DDD](./)
+[DDD]
 
-[TDD vs BDD vs DDD diff](./)
+[TDD vs BDD vs DDD diff]
 ### MQ
 
 [RabbitMQ]
