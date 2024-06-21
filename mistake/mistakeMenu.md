@@ -1,4 +1,4 @@
 # 紀錄踩坑
 
-[Gradle Java 專案版本無法切換](./Gradle Java 專案版本無法切換.md)
+[Gradle Java 專案版本無法切換]()
 
