@@ -51,9 +51,9 @@
 
 ### Spring Data
 
-[JPA](./)
+[JPA]
 
-[Mybaits](./)
+[Mybaits]
 
 ### Test
 
