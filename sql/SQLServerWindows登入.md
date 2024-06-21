@@ -34,6 +34,32 @@ spring.jpa.database-platform=org.hibernate.dialect.SQLServerDialect
 spring.jpa.hibernate.ddl-auto=none
 ```
 
+## 連線問題 - TCP/IP 未啟動
+
+連線時遇到
+```
+[08S01] 連接到主機 localhost (連接埠 1433) 的 TCP/IP 連接已經失敗。錯誤: "Connection refused: getsockopt。
+確認連接屬性。確認 SQL Server 執行個體是否在主機上執行並接受在通訊埠的 TCP/IP 連接。
+確認防火牆未封鎖通訊埠的 TCP 連接。"。.
+```
+
+1. 搜尋 - SQL Server 20xx 設定管理員
+
+2. 找到 SQL Server 網路組太 -> MSSQLSERVER 的通訊協定 -> 點兩下 -> TCP/IP 右鍵 -> 啟用
+<img width="485" alt="image" src="https://github.com/dacelo971130/learing/assets/83411220/ce148767-c806-496f-a3fb-62505fc92c5c">
+
+3. 到上方點選 SQL SERVER 服務，點選 SQL SERVER(MSSQLSERVE) 右鍵 -> 重啟
+
+<img width="581" alt="image" src="https://github.com/dacelo971130/learing/assets/83411220/4a40db13-6e8d-43a2-adba-a9d2c9868847">
+
+4. 大功告成
+
+## 新增 SQL SERVER 使用者
+
+流程: 安全性 -> 登入 -> 右鍵，新增使用者
+
+<img width="127" alt="image" src="https://github.com/dacelo971130/learing/assets/83411220/653e6190-2bbf-4705-a6d6-7b447c39aa23">
+
 ## 參考
 
 [SQL Server 快速上手 (3) - 建立你的第一個關聯式資料庫](https://devbricker.github.io/post/database/sql-server/sqlserverbasic3/)
