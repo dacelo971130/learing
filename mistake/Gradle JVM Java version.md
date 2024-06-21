@@ -1,3 +1,5 @@
+# Gradle Java 專案版本無法切換
+
 ## 問題
 
 new 新專案 `build` 失敗，顯示指定 JDK 17，但 JVM 要求 JDK 8
