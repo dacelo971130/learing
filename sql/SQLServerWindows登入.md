@@ -9,6 +9,7 @@
 流程1: 伺服器名稱 -> 瀏覽其他 -> 資料庫引擎 -> 找到自己的電腦名稱
 
 `CASPER_INFOT(你的電腦名稱)` 是我們的目標，但預設應該是不會有
+
 <img width="250" alt="image" src="https://github.com/dacelo971130/learing/assets/83411220/79b3ac33-eaa0-4dad-89a3-f09621d386e7">
 
 <img width="198" alt="image" src="https://github.com/dacelo971130/learing/assets/83411220/3a4c01b1-e49e-44fa-ac96-125afd07cca7">
