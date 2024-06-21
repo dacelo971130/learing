@@ -46,7 +46,7 @@ Dependency requires at least JVM runtime version 17. This build uses a Java 8 JV
 
 2. IDEA Setting 未設置或設定不佳
 
-3. `Java_HOME` 未設置或設定不佳
+3. `JAVA_HOME` 未設置或設定不佳
 
 4. build.gradle 未設置或設定不佳
 
