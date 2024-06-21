@@ -31,3 +31,7 @@ spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
 spring.jpa.database-platform=org.hibernate.dialect.SQLServerDialect
 spring.jpa.hibernate.ddl-auto=none
 ```
+
+## 參考
+
+[SQL Server 快速上手 (3) - 建立你的第一個關聯式資料庫](https://devbricker.github.io/post/database/sql-server/sqlserverbasic3/)
