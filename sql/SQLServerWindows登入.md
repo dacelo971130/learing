@@ -63,3 +63,5 @@ spring.jpa.hibernate.ddl-auto=none
 ## 參考
 
 [SQL Server 快速上手 (3) - 建立你的第一個關聯式資料庫](https://devbricker.github.io/post/database/sql-server/sqlserverbasic3/)
+
+[連線問題 - TCP/IP 未啟動](https://medium.com/@nick841005/java-%E4%BD%BF%E7%94%A8jdbc%E5%A0%B1%E9%8C%AF-5383fbe676ed)
