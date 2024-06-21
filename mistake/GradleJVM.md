@@ -1,4 +1,4 @@
-# Gradle Java 專案版本無法切換
+# Gradle JDK 被強制鎖定
 
 ## 問題
 
@@ -38,7 +38,7 @@ Dependency requires at least JVM runtime version 17. This build uses a Java 8 JV
 
 ## 如何想到刪除 .idea ?
 
-我也不知道，猜的，浪費我一小時
+猜的，翻到裡面有跟設定 JDK 相關設定，大手一揮直接砍了
 
 ## 原始推測原因
 
