@@ -34,7 +34,7 @@ Dependency requires at least JVM runtime version 17. This build uses a Java 8 JV
 
 ## 結果
 
-關閉 idea，至專案資料夾下刪除 .idea Floder，開啟專案讓它重載。(成功)
+關閉 intellij，至專案資料夾下刪除 .idea Floder，開啟專案讓它重載。(成功)
 
 ## 如何想到刪除 .idea ?
 
