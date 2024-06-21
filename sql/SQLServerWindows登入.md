@@ -24,6 +24,8 @@
 
 ## 如何設定 Spring boot SQL Server 2022 config(Windows登入)
 
+使用 `integratedSecurity=true;` 就可以不必對 username、password 進行設置，對簡單 demo 專案來說很方便
+
 application.properties
 ```
 spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=TSR;integratedSecurity=true;
