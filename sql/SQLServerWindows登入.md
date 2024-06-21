@@ -52,8 +52,6 @@ spring.jpa.hibernate.ddl-auto=none
 
 <img width="581" alt="image" src="https://github.com/dacelo971130/learing/assets/83411220/4a40db13-6e8d-43a2-adba-a9d2c9868847">
 
-4. 大功告成
-
 ## 新增 SQL SERVER 使用者
 
 流程: 安全性 -> 登入 -> 右鍵，新增使用者 -> 選擇 SQL Server 驗證 -> 輸入 username/password，確認 -> 可以改成 user 登入
