@@ -38,7 +38,7 @@ Dependency requires at least JVM runtime version 17. This build uses a Java 8 JV
 
 ## 如何想到刪除 .idea ?
 
-猜的，翻到裡面有跟設定 JDK 相關設定，大手一揮直接砍了
+猜的，翻到裡面有 JDK 相關設定，大手一揮直接砍了
 
 ## 原始推測原因
 
